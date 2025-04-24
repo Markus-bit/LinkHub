@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 py-16 text-white md:py-24">
+      <section className="bg-blue-600 py-16 text-white md:py-24 rounded-xl">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">Ready to organize your online world?</h2>
           <p className="mb-8 text-lg text-blue-100">
@@ -107,7 +107,7 @@ export default function Home() {
           <Link to="/signup">
             <Button 
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50 dark:hover:bg-white/90"
+              className="bg-white text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-800/90"
             >
               Sign Up Now
             </Button>
