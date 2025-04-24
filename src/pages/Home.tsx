@@ -50,52 +50,47 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
-            Organize Your Online Life
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                icon: <Compass className="h-10 w-10 text-blue-500" />,
-                title: "Discover",
-                description: "Find and save your favorite websites in one place."
-              },
-              {
-                icon: <Bookmark className="h-10 w-10 text-purple-500" />,
-                title: "Organize",
-                description: "Categorize your links for easy access and organization."
-              },
-              {
-                icon: <Layers className="h-10 w-10 text-indigo-500" />,
-                title: "Personalize",
-                description: "Customize your dashboard to fit your preferences."
-              },
-              {
-                icon: <User className="h-10 w-10 text-green-500" />,
-                title: "Share",
-                description: "Share your collection with friends or keep it private."
-              }
-            ].map((feature, index) => (
-              <motion.div
-                key={index}
-                className="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm dark:bg-slate-900"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="mb-4 rounded-full bg-slate-100 p-3 dark:bg-slate-800">
-                  {feature.icon}
-                </div>
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">{feature.title}</h3>
-                <p className="text-slate-600 dark:text-slate-300">{feature.description}</p>
-              </motion.div>
-            ))}
+{/* Features Section */}
+<section className="pt-8 md:pt-12 md:py-24"> {/* Redusert top-padding */}
+  <div className="mx-auto max-w-6xl px-4">
+    <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
+      Organize Your Online Life
+    </h2>
+    <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3 justify-items-center">
+      {[
+        {
+          icon: <Compass className="h-10 w-10 text-blue-500" />,
+          title: "Discover",
+          description: "Find and save your favorite websites in one place."
+        },
+        {
+          icon: <Bookmark className="h-10 w-10 text-purple-500" />,
+          title: "Organize",
+          description: "Categorize your links for easy access and organization."
+        },
+        {
+          icon: <Layers className="h-10 w-10 text-indigo-500" />,
+          title: "Personalize",
+          description: "Customize your dashboard to fit your preferences."
+        }
+      ].map((feature, index) => (
+        <motion.div
+          key={index}
+          className="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm dark:bg-slate-900"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+          <div className="mb-4 rounded-full bg-slate-100 p-3 dark:bg-slate-800">
+            {feature.icon}
           </div>
-        </div>
-      </section>
+          <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">{feature.title}</h3>
+          <p className="text-slate-600 dark:text-slate-300">{feature.description}</p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="bg-blue-600 py-16 text-white md:py-24 rounded-xl">
