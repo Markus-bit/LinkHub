@@ -59,30 +59,3 @@ export const getCategoryIcon = (iconName: string) => {
   
   return icons[iconName] || Globe;
 };
-
-export const defaultLinks = {
-  'ai-tools': [
-    {
-      title: 'Bolt AI',
-      url: 'https://bolt.ai',
-      description: 'AI coding assistant for developers',
-    },
-    {
-      title: 'Lovable AI',
-      url: 'https://lovable.ai',
-      description: 'AI-powered customer support solutions',
-    },
-  ],
-  'learning': [
-    {
-      title: 'LeetCode',
-      url: 'https://leetcode.com',
-      description: 'Technical interview preparation platform',
-    },
-    {
-      title: 'HackerRank',
-      url: 'https://hackerrank.com',
-      description: 'Coding challenges and competitions',
-    },
-  ],
-};

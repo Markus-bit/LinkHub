@@ -169,7 +169,7 @@ export default function AddLinkModal({ isOpen, onClose, onSave, editingLink }: A
                 />
               </div>
               
-              <div className="flex justify-end space-x-3 pt-4">
+              <div className="flex justify-end space-x-3 pt-4 text-white">
                 <Button variant="outline" onClick={onClose} disabled={loading}>
                   Cancel
                 </Button>

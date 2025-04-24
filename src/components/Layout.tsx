@@ -64,14 +64,6 @@ export default function Layout({ children }: LayoutProps) {
               <>
                 {!isDashboard && (
                   <>
-                    <div className="relative">
-                      <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
-                      <input
-                        type="search"
-                        placeholder="Search links..."
-                        className="w-64 rounded-full border border-slate-300 bg-slate-50 py-2 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
-                      />
-                    </div>
                     <Link to="/dashboard">
                       <Button variant="ghost" size="sm" className="text-white">Dashboard</Button>
                     </Link>
@@ -126,14 +118,6 @@ export default function Layout({ children }: LayoutProps) {
               <div className="flex flex-col space-y-3">
                 {!isDashboard && user && (
                   <>
-                    <div className="relative">
-                      <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
-                      <input
-                        type="search"
-                        placeholder="Search links..."
-                        className="w-full rounded-full border border-slate-300 bg-slate-50 py-2 pl-10 pr-4 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
-                      />
-                    </div>
                     <Link to="/dashboard" className="py-2 text-white">
                       Dashboard
                     </Link>
