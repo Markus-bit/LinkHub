@@ -176,18 +176,7 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       <main className="container mx-auto pt-16">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="p-4"
-          >
             {children}
-          </motion.div>
-        </AnimatePresence>
       </main>
 
       <footer className="border-t border-slate-200 bg-white py-8 dark:border-slate-800 dark:bg-slate-950">
