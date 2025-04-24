@@ -214,8 +214,8 @@ export default function Dashboard() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="mb-4 flex items-center justify-between">
-                        <h2 className="text-xl font-semibold text-slate-900 dark:text-white">
+                      <div className="mb-4 flex items-center justify-between text-white">
+                        <h2 className="text-xl font-semibold ">
                           {category?.name || categoryId}
                         </h2>
                         <Button
